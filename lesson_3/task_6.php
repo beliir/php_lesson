@@ -13,7 +13,6 @@ $menu_arr = array(
     "Контакты",
     "Скидки"
 );
-echo is_array($var);
 ?>
 <!DOCTYPE html>
 <html lang="en">
