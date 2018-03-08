@@ -23,17 +23,7 @@ function translitCycle($str){
 
 	for ($i=0;$i<mb_strlen($str);$i++){
 		$let = mb_substr($str, $i, 1);
-
-		$result_str .= (preg_match('/(\W|\d)/', $let)) ? $let : $arr[$let];
-
-		/*
-		if (preg_match('/(\W|\d)/', $let)) // проверяем на наличие символов и цифр
-		{
-			$result_str.=$let;
-		} else {
 			$result_str.=$arr[$let];
-		}
-		*/
 	}
 
 	return $result_str;

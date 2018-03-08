@@ -23,14 +23,7 @@ function translitCycle($str){
 
 	for ($i=0;$i<mb_strlen($str);$i++){
 		$let = mb_substr($str, $i, 1);
-        
-        if (preg_match('/(\W|\d)/')) {
-            $result_str .= $let;
-        } elseif (preg_match('/\s/','_', $let)) {
-            $result_str .= $let;
-        } else {
-            $result_str .= $arr[$let];
-        }
+        $result_str .= (preg_match('/\s/','_', $let)) ? $let : $arr[$let];
 	}
 
 	return $result_str;
