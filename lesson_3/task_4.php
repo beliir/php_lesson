@@ -12,9 +12,9 @@ function translit($str){
 	$result_str = strtr($str, $arr);
 	return $result_str;
 }
-echo(translit('Привет! Что нового? - Изучаю PHP!'));
+echo(translit('С чем котлетки? С макарошками??? НЕТ с пюрешкой!!!'));
 
-//Или через цикл
+//цикл
 
 function translitCycle($str){
 	$arr=array(
@@ -28,5 +28,5 @@ function translitCycle($str){
 
 	return $result_str;
 }
-echo(translit('Привет! А ты используешь циклы?'));
+echo(translit('Циклы цыклы'));
 
