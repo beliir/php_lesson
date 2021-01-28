@@ -22,5 +22,5 @@ foreach($arr as $key => $value ){
 			$cities .= $city . ', ';
 		} 
 	}
-	echo $key . ':<br>' . substr($cities, 0, -2) . '<br>';
+	echo $cities;
 }
