@@ -16,6 +16,16 @@ $arr = array(
 );
 
 foreach($arr as $key => $value ){
+    	echo PHP_EOL . $key , ":" . PHP_EOL;	
+	foreach($value as $city){
+	echo $city . ", ";
+	}
+}
+
+echo  PHP_EOL;
+
+echo "На букву К: ";
+foreach($arr as $key => $value ){
 	$cities='';
 	foreach($value as $city){
 		if (mb_substr($city, 0, 1) == 'К') {
