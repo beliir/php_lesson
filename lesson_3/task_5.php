@@ -9,6 +9,8 @@ function subSpace($str){
 }
 echo subSpace('Заменяем всем пробелы на _!');
 
+echo "\n";
+
 //Или циклом
 
 function subSpaceCycle($str){
