@@ -19,5 +19,5 @@ foreach($arr as $key => $value ){
 	foreach($value as $city){
 		$cities .= $city . ', ';
 	}
-	echo $key . ':<br>' . substr($cities, 0, -2) . '<br>';
+	echo $key . ':<br>' . substr($cities, 0, -2) . '<br>' . PHP_EOL;
 }
