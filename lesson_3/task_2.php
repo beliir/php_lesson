@@ -10,15 +10,15 @@
 */ 
 function counter($num, $num_end) {
 	do {
-		if ($num==0) {
-			echo $num.' - это ноль.<br>';
-		} elseif ($num%2==0) {
-			echo $num.' - четное число.<br>';
+		if ($num == 0) {
+			echo $num . ' - это ноль.<br>';
+		} elseif ($num % 2 == 0) {
+			echo $num . ' - четное число.<br>';
 		} else {
-			echo $num.' - нечетное число.<br>';
+			echo $num . ' - нечетное число.<br>';
 		}
 		$num++;
-	} while ($num<=$num_end);
+	} while ($num <= $num_end);
 }
 
-counter(0,10);
+counter(0, 10);
