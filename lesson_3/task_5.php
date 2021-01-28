@@ -12,7 +12,7 @@ echo subSpace('Заменяем всем пробелы на _!');
 //Или циклом
 
 function subSpaceCycle($str){
-	for($i=0;$i<mb_strlen($str);$i++){
+	for($i = 0; $i < mb_strlen($str); $i++){
 		$let = mb_substr($str, $i, 1);
 		
 		$result_str .= (preg_match('/\s/', $let)) ? '_' : $let;
