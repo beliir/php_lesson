@@ -15,9 +15,9 @@ $arr = array(
 );
 
 foreach($arr as $key => $value ){
-	$cities='';
+	$cities = '';
 	foreach($value as $city){
-		$cities.=$city.', ';
+		$cities .= $city . ', ';
 	}
-	echo $key.':<br>'.substr($cities, 0, -2).'<br>';
+	echo $key . ':<br>' . mb_substr($cities, 0, -2) . '<br>';
 }
