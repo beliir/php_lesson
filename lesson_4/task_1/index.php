@@ -31,7 +31,7 @@
     </style>
     
     <div class="gallery">
-        <?php include('gullery.php') ?>
+        <?php include('gallery.php') ?>
     <div>
 
     
