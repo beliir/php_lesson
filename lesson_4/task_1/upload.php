@@ -1,11 +1,11 @@
-﻿<?php
+<?php
 
 $type = $_FILES['image']['type'];
 $tmp_name = $_FILES['image']['tmp_name'];
-$path = 'img/'.$_FILES['image']['name'];
+$path = 'img/' . $_FILES['image']['name'];
 
-$size = 3145728;
-$types = array('image/png', 'image/jpeg');
+$size = 1024 * 1024 * 5; // 5Mbyte
+$types = array('image/png', 'image/jpeg', 'image/jpg', 'image/gif', 'image/svg');
 
 if($_FILES[image][size] > $size ){
     die ('Очень большой файл');

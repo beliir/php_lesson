@@ -9,11 +9,14 @@ function subSpace($str){
 }
 echo subSpace('Заменяем всем пробелы на _!');
 
+echo "\n";
+
 //Или циклом
 
 function subSpaceCycle($str){
-	for($i=0;$i<mb_strlen($str);$i++){
-		$let = mb_substr($str, $i, 1);
+	$result_str = "";
+	for($i = 0; $i < strlen($str); $i++){
+		$let = substr($str, $i, 1);
 		
 		$result_str .= (preg_match('/\s/', $let)) ? '_' : $let;
 		
